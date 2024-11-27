@@ -11,7 +11,7 @@ import cart from '../assets/cart.png'
 const Navbar = () => {
     return (
         <header>
-            <div className="announcement-bar text-xs mt-2 pb-2 flex justify-between px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] text-brown font-dmsans">
+            <div className="announcement-bar text-xs mt-2 pb-2 flex justify-between px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] text-brown font-dmsans lg:flex hidden">
                 <div className="left-col">
                     <ul class="announcement-bar-list flex gap-1 lg:gap-4">
                         <li class="flex items-center gap-1">

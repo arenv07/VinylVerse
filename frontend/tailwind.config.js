@@ -18,6 +18,9 @@ export default {
       fontSize: {
         '100': '6.25rem', 
       },
+      letterSpacing: {
+        large: '.125em', 
+      },
     },
   },
   plugins: [],
