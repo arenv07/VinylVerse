@@ -13,6 +13,7 @@ export default {
       },
       colors: {
         'brown': '#3A1F04',
+        'teal': '#5A8D8A',
       },
       fontSize: {
         '100': '6.25rem', 
