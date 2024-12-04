@@ -1,10 +1,11 @@
 import logo from './vinylverse-logo.png';
 import hero_img from './vinylverse-hero-img.png';
-import phone from './assets/phone-icon.png';
-import mail from './assets/mail-icon.png';
-import shipping from './assets/shipping-icon.png';
-import moneyBack from './assets/money-back-icon.png';
-import customerSupport from './assets/customer-support-icon.png';
+import phone from './phone-icon.png';
+import mail from './mail-icon.png';
+import shipping from './shipping-icon.png';
+import moneyBack from './money-back-icon.png';
+import customerSupport from './customer-support-icon.png';
+import cart from './cart.png';
 
 
 export const assets = {
@@ -14,5 +15,6 @@ export const assets = {
     mail,
     shipping,
     moneyBack, 
-    customerSupport
+    customerSupport,
+    cart
 }
