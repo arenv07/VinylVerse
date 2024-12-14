@@ -14,6 +14,7 @@ export default {
       colors: {
         'brown': '#3A1F04',
         'teal': '#5A8D8A',
+        'offwhite': '#FAF9F6'
       },
       fontSize: {
         '100': '6.25rem', 
