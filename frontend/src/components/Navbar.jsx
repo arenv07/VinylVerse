@@ -51,19 +51,19 @@ const Navbar = () => {
                 <ul className="flex justify-center items-center h-full w-full gap-4 lg:gap-6">
                     <NavLink to='/' className="flex flex-col items-center gap-0.3">
                         <li>HOME</li>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-white hidden"/>
+                        <hr className="w-2/4 border-none h-[1.5px] bg-white hidden rounded-full"/>
                     </NavLink>
                     <NavLink to='/collection' className="flex flex-col items-center gap-0.3">
                         <li>COLLECTION</li>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-white hidden"/>
+                        <hr className="w-2/4 border-none h-[1.5px] bg-white hidden rounded-full"/>
                     </NavLink>
                     <NavLink to='/about' className="flex flex-col items-center gap-0.3">
                         <li>ABOUT</li>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-white hidden"/>
+                        <hr className="w-2/4 border-none h-[1.5px] bg-white hidden rounded-full"/>
                     </NavLink>
                     <NavLink to='/contact' className="flex flex-col items-center gap-0.3">
                         <li>CONTACT</li>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-white hidden"/>
+                        <hr className="w-2/4 border-none h-[1.5px] bg-white hidden rounded-full"/>
                     </NavLink>
                 </ul>
             </nav>
