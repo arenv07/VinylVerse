@@ -29,6 +29,18 @@ a.active hr {
     }
 }
 
+@media (max-width: 768px) {
+    .visit-us {
+        text-align: center;
+    }
+    .location-container {
+        justify-content: center;
+    }
+    .store-img {
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 1024px) {
     .hero-title {
         font-size: 1.4rem

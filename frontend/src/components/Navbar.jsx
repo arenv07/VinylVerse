@@ -4,7 +4,7 @@ import {assets} from '../assets/assets';
 
 const Navbar = () => {
     return (
-        <header>
+        <header className="sticky top-0 z-50 bg-tan">
             <div className="announcement-bar text-xs mt-2 pb-2 flex justify-between px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] text-brown font-dmsans lg:flex hidden">
                 <div className="left-col">
                     <ul className="announcement-bar-list flex gap-1 lg:gap-4">
@@ -36,7 +36,8 @@ const Navbar = () => {
                 </div>
             </div>
             <hr className="announcement-bar-line"/>
-            <div className="header-bar grid grid-cols-3 flex items-center mt-2 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+            <div>
+                <div className="header-bar grid grid-cols-3 flex items-center mt-2 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
                 {/* <a href=""><img src={logo} alt="" class="h-10"/></a> */}
                 <img src={assets.logo} alt="" className="h-10"/>
                 {/* <input type="text" />
@@ -67,6 +68,8 @@ const Navbar = () => {
                     </NavLink>
                 </ul>
             </nav>
+            </div>
+            
         </header>
     )
 }

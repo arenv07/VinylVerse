@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from '../components/Footer';
 import collectionGraphic from '../assets/browse.png';
 import searchIcon from '../assets/search-icon.png';
 import macWatchingMovies from '../assets/mac-watching-movies.png';
@@ -103,7 +104,6 @@ const Collection = () => {
 
   return (
     <div className="font-sans">
-
       {/* Header */}
       <header className="relative">
         <img
@@ -111,25 +111,27 @@ const Collection = () => {
           alt=""
           className="w-full object-cover "
         />
-        <h1 className="absolute bottom-1 left-6 text-3xl font-bold text-black">
+        <h1 className="absolute bottom-1 text-3xl font-bold text-black px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
           BROWSE VINYLS
         </h1>
       </header>
 
       {/* Search Bar */}
-      <div className="flex items-center mx-6 mt-6 bg-none border border-brown rounded-md px-4 py-2 w-1/4">
-        <img src={searchIcon} alt="Search" className="h-5 w-5" />
-        <input
-          type="text"
-          className="flex-grow bg-transparent ml-4 outline-none"
-          placeholder="Search records"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+      <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+        <div className="flex items-center mt-6 bg-none border border-brown rounded-md px-4 py-2 w-1/4">
+          <img src={searchIcon} alt="Search" className="h-5 w-5" />
+          <input
+            type="text"
+            className="flex-grow bg-transparent ml-4 outline-none"
+            placeholder="Search records"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
       </div>
-
+      
       {/* Records */}
-      <div className="grid gap-6 p-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 p-6 sm:grid-cols-2 lg:grid-cols-3 mb-8 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
         {filteredRecords.map((record, index) => (
           <div
             key={index}
@@ -153,6 +155,9 @@ const Collection = () => {
           </div>
         ))}
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
