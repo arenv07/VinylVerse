@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from "motion/react";
 import { assets } from '../assets/assets';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -106,19 +107,21 @@ const Home = () => {
               <h1 className="hero-text font-bungee text-100 text-white leading-tight">SPIN, <br /> DISCOVER, <br /> REPEAT.</h1>
 
               {/* Hero button with hover effect */}
-              <motion.button
-                className="hero-btn bg-teal text-white py-4 px-6 rounded-lg mt-6 font-bold shadow-lg"
-                whileHover={{
-                  scale: 1.05,        // Size
-                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', // Shadow
-                  transition: {
-                    duration: 0.3,
-                    ease: "easeInOut"
-                  }
-                }}
-              >
-                SHOP NOW
-              </motion.button>
+              <Link to="/collection">
+                <motion.button
+                  className="hero-btn bg-teal text-white py-4 px-6 rounded-lg mt-6 font-bold shadow-lg"
+                  whileHover={{
+                    scale: 1.05,        // Size
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', // Shadow
+                    transition: {
+                      duration: 0.3,
+                      ease: "easeInOut"
+                    }
+                  }}
+                >
+                  SHOP NOW
+                </motion.button>
+              </Link>
             </div>
           </div>
         </section>
@@ -161,19 +164,21 @@ const Home = () => {
         <section>
           <div className="bg-brown h-50 w-full flex items-center justify-center flex-col text-white p-10 mt-6">
             <h3 className="font-bungee text-5xl text-center">Browse the Collection</h3>
-            <motion.button
-              className="hero-btn bg-teal text-white py-2 px-4 rounded-lg mt-6 font-bold shadow-lg"
-              whileHover={{
-                scale: 1.05,        // Size
-                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', // Shadow
-                transition: {
-                  duration: 0.3,
-                  ease: "easeInOut"
-                }
-              }}
-            >
-              View Vinyls
-            </motion.button>
+            <Link to="/collection">
+              <motion.button
+                className="hero-btn bg-teal text-white py-2 px-4 rounded-lg mt-6 font-bold shadow-lg"
+                whileHover={{
+                  scale: 1.05,        // Size
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', // Shadow
+                  transition: {
+                    duration: 0.3,
+                    ease: "easeInOut"
+                  }
+                }}
+              >
+                View Vinyls
+              </motion.button>
+            </Link>
           </div>
         </section>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import {assets} from '../assets/assets';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -38,8 +39,11 @@ const Navbar = () => {
             <hr className="announcement-bar-line"/>
             <div>
                 <div className="header-bar grid grid-cols-3 flex items-center mt-2 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
-                {/* <a href=""><img src={logo} alt="" class="h-10"/></a> */}
-                <img src={assets.logo} alt="" className="h-10"/>
+                
+                <Link to="/">
+                    <img src={assets.logo} alt="" className="h-10 cursor-pointer"/>
+                </Link>
+                
                 {/* <input type="text" />
                 <div class="bg-gray-200 p-4">Column 1</div> */}
                 <input type="text" class="px-4 py-2 w-100 bg-transparent border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brown" placeholder="Search vinyls..."/>
