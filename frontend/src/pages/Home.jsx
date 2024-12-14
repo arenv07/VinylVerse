@@ -148,7 +148,7 @@ const Home = () => {
                 <p className="text-gray-500 text-sm">{record.genre}</p>
                 <div className="mt-4 flex justify-between items-center">
                   <p className="text-lg font-semibold">{record.price}</p>
-                  <button className="px-4 py-2 bg-brown text-white rounded-md hover:bg-blue-600">
+                  <button className="px-4 py-2 bg-brown text-white rounded-md transition duration-300 hover:bg-orange-700">
                     VIEW
                   </button>
                 </div>
@@ -195,12 +195,12 @@ const Home = () => {
                   <p className="font-bold mt-3 text-lg text-center">{item.title}</p>
                   <p className="mt-2 text-center">{item.author}</p>
                   <p className="mt-1 text-center text-sm">{item.time}</p>
-                  <button className="mt-4 px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded">
+                  <button className="mt-4 px-4 py-2 bg-brown transition duration-300 hover:bg-orange-700 rounded">
                     <a
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black no-underline"
+                      className="text-white no-underline"
                     >
                       View Article
                     </a>
