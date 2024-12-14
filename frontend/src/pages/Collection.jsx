@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from 'react';
 import Footer from '../components/Footer';
 import collectionGraphic from '../assets/browse.png';
 import searchIcon from '../assets/search-icon.png';
@@ -101,6 +102,10 @@ const Collection = () => {
     record.artist.toLowerCase().includes(searchTerm.toLowerCase()) ||
     record.album.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []); // Empty dependency array ensures this runs once when the component mounts
 
   return (
     <div className="font-sans">

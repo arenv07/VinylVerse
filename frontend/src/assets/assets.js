@@ -21,6 +21,14 @@ import newsCard1 from "../assets/news-card-1.webp";
 import newsCard2 from "../assets/news-card-2.webp";
 import newsCard3 from "../assets/news-card-3.webp";
 
+// Collection Page
+import macWatchingMovies from '../assets/mac-watching-movies.png';
+import frankBlond from '../assets/frank-ocean-blonde.jpg';
+import brat from '../assets/charli-xcx-brat.png';
+import crazyp from '../assets/crazy-p.png';
+import gorillaz from '../assets/gorillaz.png';
+import joeyBadass from '../assets/joey-badass.jpeg';
+
 // About Page
 import locationIcon from "../assets/location.png";
 import store from "../assets/store.png";
@@ -48,5 +56,11 @@ export const assets = {
     newsCard2,
     newsCard3,
     locationIcon,
-    store
+    store,
+    macWatchingMovies, 
+    frankBlond,
+    brat,
+    crazyp,
+    gorillaz,
+    joeyBadass
 }
