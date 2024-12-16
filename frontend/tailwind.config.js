@@ -18,7 +18,7 @@ export default {
         'tan': '#F5EEDC'
       },
       fontSize: {
-        '100': '6.25rem', 
+        '100': '6rem', 
       },
       letterSpacing: {
         large: '.125em', 

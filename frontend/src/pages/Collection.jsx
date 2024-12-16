@@ -154,7 +154,7 @@ const Collection = () => {
             <p className="text-gray-500 text-sm">{record.genre}</p>
             <div className="mt-4 flex justify-between items-center">
               <p className="text-lg font-semibold">{record.price}</p>
-              <button className="px-4 py-2 bg-brown text-white rounded-md hover:bg-blue-600">
+              <button className="px-4 py-2 bg-brown text-white rounded-md transition duration-300 hover:bg-orange-700">
                 VIEW
               </button>
             </div>
