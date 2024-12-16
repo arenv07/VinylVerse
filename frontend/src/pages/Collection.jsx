@@ -114,16 +114,17 @@ const Collection = () => {
         <img
           src={collectionGraphic}
           alt=""
-          className="w-full object-cover "
+          className="w-full object-cover"
         />
-        <h1 className="absolute bottom-1 text-3xl font-bold text-black px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+        <div className="block sm:hidden h-16"></div>
+        <h1 className="browse-vinyls absolute bottom-1 text-3xl font-bold text-black px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] mt-4 sm:mt-6">
           BROWSE VINYLS
         </h1>
       </header>
 
       {/* Search Bar */}
       <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
-        <div className="flex items-center mt-6 bg-none border border-brown rounded-md px-4 py-2 w-1/4">
+        <div className="flex items-center mt-6 bg-none border border-brown rounded-md px-4 py-2 sm:w-3/4 md:w-1/3">
           <img src={searchIcon} alt="Search" className="h-5 w-5" />
           <input
             type="text"

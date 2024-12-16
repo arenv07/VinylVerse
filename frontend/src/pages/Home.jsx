@@ -99,9 +99,9 @@ const Home = () => {
   return (
     <div>
       <main>
-        <section className="relative min-h-screen flex items-stretch">
+        <section className="relative min-h-screen flex items-center justify-center sm:items-stretch sm:justify-start">
           <img src={assets.hero_img} alt="" className="absolute inset-0 object-cover w-full h-full" />
-          <div className="relative z-10 max-w-2xl text-left px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] pt-12">
+          <div className="relative z-10 max-w-2xl text-left px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] sm:pt-12">
             <div className="hero-content">
               <p className="hero-title text-white tracking-large font-extralight text-[#D0D0D0]">VINYLVERSE</p>
               <h1 className="hero-text font-bungee text-100 text-white leading-tight">SPIN, <br /> DISCOVER, <br /> REPEAT.</h1>
@@ -130,11 +130,11 @@ const Home = () => {
         <section className="relative">
           <div className="relative">
             <img src={assets.homeGraphic} alt="" className="absolute w-full h-auto inset-0" />
-            <h2 className="relative font-poppins font-semibold text-5xl px-4 pt-12 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">TRENDING VINYLS</h2>
+            <h2 className="relative text-center sm:text-left font-poppins font-semibold text-5xl px-4 pt-24 sm:pt-12 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">TRENDING VINYLS</h2>
           </div>
 
           {/* Trending Vinyls Grid */}
-          <div className="grid gap-6 p-6 sm:grid-cols-2 lg:grid-cols-4 px-4 pt-12 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] mt-36">
+          <div className="grid gap-6 p-6 sm:grid-cols-2 lg:grid-cols-4 px-4 sm:pt-8 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] mt-36">
             {trendingVinyls.map((record, index) => (
               <div
                 key={index}

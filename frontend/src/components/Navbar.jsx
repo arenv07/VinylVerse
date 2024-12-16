@@ -61,12 +61,12 @@ const Navbar = () => {
 
                     <div className="flex gap-2 justify-end items-center">
                         {/* Search bar */}
-                        <div className="relative mr-4">
+                        <div className="relative sm:mr-4">
                             <input
                                 type="text"
                                 value={searchQuery}
                                 onChange={handleSearchChange}
-                                className="px-4 py-2 w-100 bg-transparent border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brown"
+                                className="px-4 py-2 w-100 bg-transparent border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brown"
                                 placeholder="Search vinyls..."
                             />
                             {/* Display search results */}
@@ -85,10 +85,10 @@ const Navbar = () => {
                             )}
                         </div>
                         <a href="">
-                            <img src={assets.cart} alt="" className="h-6" />
+                            <img src={assets.cart} alt="" className="h-6 hidden sm:block" />
                         </a>
                         <a href="">
-                            <p>5 items</p>
+                            <p className="hidden sm:block">5 items</p>
                         </a>
                     </div>
                 </div>
